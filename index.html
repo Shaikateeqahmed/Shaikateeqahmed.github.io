@@ -97,6 +97,9 @@
            background-color: #66fcf1 ;
            border-radius: 5px;
         }
+        #gl>a>img{
+            height: 100%;
+        }
         #user-detail-name{
             font-size: 45px;
         }
@@ -256,6 +259,34 @@
         height: 100%;
         border-radius: 10px;
        }
+       #proj3img{
+        width: 50%;
+        border: 5px solid #66fcf1;
+        border-radius: 10px;
+       }
+       #proj3img:hover{
+        cursor: pointer;
+        box-shadow: #66fcf1 0px 15px 55px;
+       }
+       #proj4img:hover{
+        cursor: pointer;
+        box-shadow: #66fcf1 0px 15px 55px;
+       }
+       #proj3img>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+       }
+       #proj4img{
+        width: 50%;
+        border: 5px solid #66fcf1;
+        border-radius: 10px;
+       }
+       #proj4img>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+       }
        #des{
         width: 20%;
         height: 80%;
@@ -327,6 +358,89 @@
         cursor: pointer;
         box-shadow: #66fcf1 0px 15px 55px;
     }
+    .nav-link-Statistics>.container>div{
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5%;
+        margin-top: 100px;
+    }
+    .nav-link-Statistics>.container>div>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .nav-link-Statistics>.container>div>img:hover{
+        cursor: pointer;
+        box-shadow: #66fcf1 0px 15px 55px;
+    }
+    /* <section class="nav-link-contacts" id="Contacts">
+        <div class="container">
+            <h1>contacts</h1>
+           <h4>Get in touch</h4>
+           <div> <img src="" alt="">
+            <h4>shaikateeqahmed892@gmail.com</h4>
+           </div>
+           <div> <img src="" alt="">
+            <a href="https://www.linkedin.com/feed/"><h4>Shaik Ateeq Ahmed</h4></a>
+        </div>
+           <div> <img src="" alt="">
+            <a href="https://github.com/Shaikateeqahmed"><h4>Shaikateeqahmed</h4></a>
+        </div>
+        </div>
+    </section> */
+    .nav-link-contacts{
+        width: 50%;
+        margin: auto;
+        background-color: #66fcf1;
+        text-align: center;
+        padding-bottom: 25px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+    .nav-link-contacts:hover{
+        box-shadow: #66fcf1 0px 15px 55px;
+    }
+    .nav-link-contacts>.container>h1{
+    font-size: 45px;
+    color: #0B0c10;
+    }
+    .nav-link-contacts>.container>div>a{
+        font-size: 18px;
+        text-decoration: underline #66fcf1;
+        color: #0B0c10;
+    }
+    .nav-link-contacts>.container>div>p{
+        font-size: 18px;
+        color: #0B0c10;
+    }
+    .nav-link-contacts>.container>div>a:hover{
+        cursor: pointer;
+        color: #ea0d01;
+        font-family: cursive;
+    }
+    .nav-link-contacts>.container>div>p:hover{
+        cursor: pointer;
+        color: #ea0d01;
+        font-family: cursive;
+    }
+    .nav-link-contacts>.container>div{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 5%;
+    }
+    .nav-link-contacts>.container>div>img{
+        width: 4%;
+        height: 4%;
+        margin-top: 2%;
+    }
+    #email{
+        border-radius: 50%;
+    }
+
     </style>
 </head>
 <body>
@@ -353,8 +467,8 @@
                 <p>Full-stack web developer</p>
                 <button class="nav-link-resume" id="homeresume">Resume</button>
                 <div id="gl">
-                    <img id="contact-github" src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png" alt="">
-                    <img id="contact-linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAZlBMVEUBAQH///8AAADk5OQkJCRtbW1fX186Ojr19fWMjIx/f3+4uLhkZGT6+vrr6+upqalycnK+vr7Nzc3b29tLS0tVVVUuLi5FRUUfHx8/Pz+xsbGTk5M0NDTExMRQUFCcnJwODg4XFxfY73YhAAAEX0lEQVRoge2bCZOrIAyAJWpraT2q9Vhru+3//5MPr/VI6OEC7r7ZzLw3qzB8BFIJIVhsJn5c8rSywFIocMtSHsb+nMWYNX2M3QIaUUkX/EYKF/Vggr9cO3L/b/hPwVMtp70Ub2+Ua02MQprQ+FA7vOvBJ4V3jcAb/sab4/2NKXrN//Bm+Iau3NgkT8ICvQne2Mh3Au4YHxqmC/55wNvG6WIC4i/8BnTPNvGU9fiLeeVr9csOf12BLvhOi4/XUL7mHxu8uw69/fFZfmHK2GZPYAUCv9bYix5cBL5ci24BF3guwUMv+vAbgU+p9mvs1eU7fsj1dQBOPrMqwIYB4HwmrVvmJRFoMkSoAmYRPi1ANDgEjCWVHv3BsRnlUUM49Qf9Dy38Bk+83rGZ+Dcd/A6PfBG8HShBx9xT2k890V4KDepL8DaBPxvD3wm6lmWRxucUPqF+IWrwM8O4kvg74JrffKK1r0i8scG/UfiLOcuPCXxkCm9BhOmeBsuTfvXwD39n7KsnXn/Mv7p6HDIJ3ho2oL3dmVzxam/jOMADrsnfoee+4cOpTALPC+w4crR5OxLt2w6Ak+dbnc7mA3zXA617gMd47fIz8GoNSonpLdZoJE/rSr56lLxSWP+Z7sJazlHxtAeSJQd2SM7briVwcSG/dYtFdh7Ha/199LgDMjyx4B56/AWXBQ408NKbl3hn50EHZCueFA8k3hZ4AI7gwxf7HdN7X/sMujgVJfL1SiGe8pA6sWU7tCX4Iy4TeOLtiO/Q/CVzT+EdtCedSkwf0KjS/kAcUU2kJOdfEd4LntAZoyM4avAvCBkzN4dnVPxMkem9Iglgl0225Ejxy7VnRHjIJJ4InqrFJ2WUplFIxUaE2HfEV4m33Vu79t/otYcYfYmztcT04qI3LZjvkTrhSkxvTxTOog91qBjLXsngk3h/Gncj1z8cH1GG301bpiIExLq7ZO4pfGPVo1YAiNkPKtA09yHSK8GVvNM3Bt99hEfrGeV6+biWInyOGuZErY0mvLdFDVO2J8O/YnruA9Nr8eNWpPilpvem9i6uZXLw//Cv4jWYngz/S00v+m/xr8x9tO7c/5TBJ9ayP/w38G+ZnhRvxvTWGXz+Q/AhLvvd+FdMj/dlUrxW0/t/B39l/N/c/+FXwcO6pofPGoxqn62Hr9MFcajdGD73qFTRd/E4YEnu7w+oVsqYFaJcTYjcuUTbvizHhS5KqIKKqJUh0+N0mvDSM9zHLWDMcUiSNi8Awaop4gc2JMhPps/IU7Nfs5iPwo1GpM2KtKhQtwl6m5FaXw0hD/l04wvW43WkIj6jd0fhzbWgT+KUTesT9FFfq/sem9W/zo0f4T09SeBSeja9EkYE+zXCB/rXdUDP4HXAE7oOyOo07Kn96TE9AeGjbIPRVdA40z8AAMUk+WRyEbZ0tGboicbvs+z72TXgo0uv1WrkgKKC1vxFcOGbU+UolipP+ZHI8UD4WvzAViwBfaxN483JP6s6QiZkxNoSAAAAAElFTkSuQmCC" alt="">
+                    <a href="https://github.com/Shaikateeqahmed"><img id="contact-github" src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png" alt=""></a>
+                   <a href="https://www.linkedin.com/feed/"><img id="contact-linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAZlBMVEUBAQH///8AAADk5OQkJCRtbW1fX186Ojr19fWMjIx/f3+4uLhkZGT6+vrr6+upqalycnK+vr7Nzc3b29tLS0tVVVUuLi5FRUUfHx8/Pz+xsbGTk5M0NDTExMRQUFCcnJwODg4XFxfY73YhAAAEX0lEQVRoge2bCZOrIAyAJWpraT2q9Vhru+3//5MPr/VI6OEC7r7ZzLw3qzB8BFIJIVhsJn5c8rSywFIocMtSHsb+nMWYNX2M3QIaUUkX/EYKF/Vggr9cO3L/b/hPwVMtp70Ub2+Ua02MQprQ+FA7vOvBJ4V3jcAb/sab4/2NKXrN//Bm+Iau3NgkT8ICvQne2Mh3Au4YHxqmC/55wNvG6WIC4i/8BnTPNvGU9fiLeeVr9csOf12BLvhOi4/XUL7mHxu8uw69/fFZfmHK2GZPYAUCv9bYix5cBL5ci24BF3guwUMv+vAbgU+p9mvs1eU7fsj1dQBOPrMqwIYB4HwmrVvmJRFoMkSoAmYRPi1ANDgEjCWVHv3BsRnlUUM49Qf9Dy38Bk+83rGZ+Dcd/A6PfBG8HShBx9xT2k890V4KDepL8DaBPxvD3wm6lmWRxucUPqF+IWrwM8O4kvg74JrffKK1r0i8scG/UfiLOcuPCXxkCm9BhOmeBsuTfvXwD39n7KsnXn/Mv7p6HDIJ3ho2oL3dmVzxam/jOMADrsnfoee+4cOpTALPC+w4crR5OxLt2w6Ak+dbnc7mA3zXA617gMd47fIz8GoNSonpLdZoJE/rSr56lLxSWP+Z7sJazlHxtAeSJQd2SM7briVwcSG/dYtFdh7Ha/199LgDMjyx4B56/AWXBQ408NKbl3hn50EHZCueFA8k3hZ4AI7gwxf7HdN7X/sMujgVJfL1SiGe8pA6sWU7tCX4Iy4TeOLtiO/Q/CVzT+EdtCedSkwf0KjS/kAcUU2kJOdfEd4LntAZoyM4avAvCBkzN4dnVPxMkem9Iglgl0225Ejxy7VnRHjIJJ4InqrFJ2WUplFIxUaE2HfEV4m33Vu79t/otYcYfYmztcT04qI3LZjvkTrhSkxvTxTOog91qBjLXsngk3h/Gncj1z8cH1GG301bpiIExLq7ZO4pfGPVo1YAiNkPKtA09yHSK8GVvNM3Bt99hEfrGeV6+biWInyOGuZErY0mvLdFDVO2J8O/YnruA9Nr8eNWpPilpvem9i6uZXLw//Cv4jWYngz/S00v+m/xr8x9tO7c/5TBJ9ayP/w38G+ZnhRvxvTWGXz+Q/AhLvvd+FdMj/dlUrxW0/t/B39l/N/c/+FXwcO6pofPGoxqn62Hr9MFcajdGD73qFTRd/E4YEnu7w+oVsqYFaJcTYjcuUTbvizHhS5KqIKKqJUh0+N0mvDSM9zHLWDMcUiSNi8Awaop4gc2JMhPps/IU7Nfs5iPwo1GpM2KtKhQtwl6m5FaXw0hD/l04wvW43WkIj6jd0fhzbWgT+KUTesT9FFfq/sem9W/zo0f4T09SeBSeja9EkYE+zXCB/rXdUDP4HXAE7oOyOo07Kn96TE9AeGjbIPRVdA40z8AAMUk+WRyEbZ0tGboicbvs+z72TXgo0uv1WrkgKKC1vxFcOGbU+UolipP+ZHI8UD4WvzAViwBfaxN483JP6s6QiZkxNoSAAAAAElFTkSuQmCC" alt=""></a> 
                 </div>
             </div>
             <img class="home-img" src="./images/professionalphoto.jpeg.jpeg" alt="">
@@ -452,8 +566,8 @@
                         <h1 class="project-title">Clockify Clone</h1>
                         <p class="project-description">Clockify is a app which helps in managing time in a efficient way. Clockify also give you a feedback on your Activities.</p>
                         <div>
-                            <button class="project-github-link" >Github</button>
-                            <button class="project-deployed-link">Live Site</button>
+                            <a href="https://github.com/Shaikateeqahmed/weary-butter-6684/blob/master/index.html"><button class="project-github-link" >Github</button></a>
+                            <a href="https://brilliant-hummingbird-53d930.netlify.app/"><button class="project-deployed-link">Live Site</button></a>
                         </div>
                     </div>
                     <div id="proj1tech" class="project-tech-stack">
@@ -475,12 +589,48 @@
                     <h1 class="project-title">J.Crew Clone</h1>
                     <p class="project-description">J.Crew is a e-commerce website, Its offer a fashionable and cool cloths. This website is build based on user and Admin access only admin can and update the products</p>
                     <div>
-                        <button class="project-github-link" >Github</button>
-                        <button class="project-deployed-link">Live Site</button>
+                        <a href="https://github.com/akt0001c/fumbling-hand-3558.git"><button class="project-github-link" >Github</button></a>
+                        <a href="https://aesthetic-capybara-e0c08f.netlify.app/"><button class="project-deployed-link">Live Site</button></a>
                     </div>
                 </div>
                 
                 <div id="proj2img" ></div>
+            </div>
+                <div id="proj1" class="project-card">
+                    <div id="proj3img"></div>
+                    <div id="des">
+                        <h1 class="project-title">Clockify Clone</h1>
+                        <p class="project-description">Clockify is a app which helps in managing time in a efficient way. Clockify also give you a feedback on your Activities.</p>
+                        <div>
+                            <a href="https://github.com/Shaikateeqahmed/weary-butter-6684/blob/master/index.html"><button class="project-github-link" >Github</button></a>
+                            <a href="https://brilliant-hummingbird-53d930.netlify.app/"><button class="project-deployed-link">Live Site</button></a>
+                        </div>
+                    </div>
+                    <div id="proj1tech" class="project-tech-stack">
+                        <h1>Tech Stack's</h1>
+                        <h4>JAVASCRIPT</h4>
+                        <h4>CSS</h4>
+                        <h4>HTML</h4>
+                    </div>
+                </div>
+            
+            <div id="proj2" class="project-card">
+                <div id="proj1tech" class="project-tech-stack">
+                    <h1>Tech Stack's</h1>
+                    <h4>JAVASCRIPT</h4>
+                    <h4>CSS</h4>
+                    <h4>HTML</h4>
+                </div>
+                <div id="des">
+                    <h1 class="project-title">J.Crew Clone</h1>
+                    <p class="project-description">J.Crew is a e-commerce website, Its offer a fashionable and cool cloths. This website is build based on user and Admin access only admin can and update the products</p>
+                    <div>
+                        <a href="https://github.com/akt0001c/fumbling-hand-3558.git"><button class="project-github-link" >Github</button></a>
+                        <a href="https://aesthetic-capybara-e0c08f.netlify.app/"><button class="project-deployed-link">Live Site</button></a>
+                    </div>
+                </div>
+                
+                <div id="proj4img" ></div>
             </div>
         </div>
            
@@ -490,15 +640,27 @@
         <div class="container">
             <h1>Statistics</h1>
             <img class="react-activity-calendar" src="./images/calender.png" alt="">
+            <div>
+                <img id="github-streak-stats" src="./images/github-streak-stats.png" alt="">
+                <img id="github-stats-card" src="./images/github-stats-card.png" alt="">
+                <img id="github-top-langs" src="./images/github-top-langs.png" alt="">
+            </div>
 
         </div>
     </section>
     <section class="nav-link-contacts" id="Contacts">
         <div class="container">
             <h1>contacts</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugiat dolor voluptatum assumenda voluptates. Modi quas perferendis adipisci praesentium voluptatem iusto debitis dolore doloremque odit esse qui necessitatibus, molestias dolorum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorum, magni id magnam praesentium nulla accusamus nam harum doloremque quo tempora, corporis incidunt. Modi dolore fuga pariatur ad nemo enim?</p>
-
+           <h4>Get in touch</h4>
+           <div> <img id="email" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFpEv4zrLAZyFWM-FIJfGFusKP9xkd3OnBcwElPb6GXm04iYAf--R_eMUUlje2LpNV6Tk&usqp=CAU" alt="">
+            <p>shaikateeqahmed892@gmail.com</p>
+           </div>
+           <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuUaY0zNnnYtzsCPyMeOJuQPzi0HMXx0eZSs5NKh_BO30gW4Xds8ZC4smt4upbLKHBSso&usqp=CAU" alt="">
+            <a href="https://www.linkedin.com/feed/"><p>Shaik Ateeq Ahmed</p></a>
+        </div>
+           <div> <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+            <a href="https://github.com/Shaikateeqahmed"><p>Shaikateeqahmed</p></a>
+        </div>
         </div>
     </section>
 </body>
