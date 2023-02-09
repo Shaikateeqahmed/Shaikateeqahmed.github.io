@@ -69,3 +69,9 @@ function c4(){
     },1000);
 }
 c4();
+
+document.getElementById("resume-button-1").addEventListener("click",resume);
+
+function resume(){
+    window.location.href="./Shaik_Ateeq_Ahmed_Resume.pdf";
+}
