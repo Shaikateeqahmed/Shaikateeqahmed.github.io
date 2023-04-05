@@ -70,8 +70,8 @@ function c4(){
 }
 c4();
 
-document.getElementById("resume-button-1").addEventListener("click",resume);
+document.getElementById("resume-link-1").addEventListener("click",resume);
 
 function resume(){
-    window.location.replace("./Shaik_Ateeq_Ahmed_Resume.pdf");
+    window.open("./Shaik_Ateeq_Ahmed_Resume.pdf","_blank");
 }
