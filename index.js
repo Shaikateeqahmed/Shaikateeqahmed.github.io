@@ -71,8 +71,12 @@ function c4(){
 c4();
 
 document.getElementById("resume-link-1").addEventListener("click",resume);
-document.getElementById("resume-link-2").addEventListener("click",resume);
+document.getElementById("resume-link-2").addEventListener("click",resume2);
 
 function resume(){
+    window.open("./Shaik_Ateeq_Ahmed_Resume.pdf","_blank");
+}
+
+function resume2(){
     window.open("./Shaik_Ateeq_Ahmed_Resume.pdf","_blank");
 }
