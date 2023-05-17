@@ -9,7 +9,7 @@
        
         body,html{
             margin: 0;
-            scroll-behavior: smooth;
+            /* scroll-behavior: smooth; */
             background-color: #0B0c10;
         }
         #header{
@@ -465,6 +465,13 @@
     #aboutdev> p{
          width: 60%;
        }
+       #nav-menu>ul>li{
+            font-size: 20px;
+            
+        }
+        #nav-menu{
+            width: 60%;
+        }
     }
     @media all and (min-width:380px) and (max-width:800px){
         
@@ -483,6 +490,30 @@
          width: 80%;
          margin: auto;
        }
+       #homedev{
+            
+            display: grid;
+            grid-template-columns: repeat(1,auto);
+            grid-template-rows: auto;
+           gap: 5px;
+            /* border: 1px solid red; */
+            
+        }
+        #nav-menu>ul>li{
+            font-size: 15px;
+            
+        }
+        #nav-menu{
+            width: 60%;
+        }
+        #header{
+            justify-content: stretch;
+            align-items: center;
+        }
+        #nav-menu>ul{
+            gap: 1%;
+        }
+        
      }
     </style>
 </head>
