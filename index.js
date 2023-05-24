@@ -36,7 +36,7 @@ c2();
 
 let proj3img = document.getElementById("proj3img");
 function c3(){
-    let images = ["./images/project1img.png","./images/proj1img2.png","./images/proj1img3.png","./images/proj1img4.png"];
+    let images = ["./images/proj3img1.png","./images/proj3img2.png","./images/proj3img3.png","./images/proj3img4.png","./images/proj3img5.png"];
     let imgel = document.createElement("img");
     imgel.src=images[0];
     proj3img.append(imgel);
@@ -54,7 +54,7 @@ c3();
 
 let proj4img = document.getElementById("proj4img");
 function c4(){
-    let images = ["./images/proj2img1.png","./images/proj2img2.png","./images/proj2img3.png","./images/proj2img2.png"];
+    let images = ["./images/proj4img1.png","./images/proj4img2.png","./images/proj4img3.png"];
     let imgel = document.createElement("img");
     imgel.src=images[0];
     proj4img.append(imgel);
